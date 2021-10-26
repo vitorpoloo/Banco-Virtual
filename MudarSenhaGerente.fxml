@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projeto.banco.CadastroGerenteController">
+   <children>
+      <Label layoutX="40.0" layoutY="32.0" text="Nome*" />
+      <TextField fx:id="txtNome" disable="true" layoutX="107.0" layoutY="28.0" prefHeight="25.0" prefWidth="455.0" />
+      <Button layoutX="39.0" layoutY="118.0" mnemonicParsing="false" onAction="#btnAlterarSenhaAction" prefHeight="25.0" prefWidth="59.0" text="Salvar" />
+      <Separator layoutX="39.0" layoutY="107.0" prefHeight="0.0" prefWidth="522.0" />
+      <Label fx:id="labelMensagem" layoutX="107.0" layoutY="122.0" prefHeight="17.0" prefWidth="455.0" />
+      <TextField fx:id="txtLogin" disable="true" layoutX="107.0" layoutY="63.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="40.0" layoutY="67.0" text="Login*" />
+      <Label layoutX="310.0" layoutY="67.0" text="Senha*" />
+      <PasswordField fx:id="txtSenha" layoutX="356.0" layoutY="63.0" prefHeight="25.0" prefWidth="205.0" />
+   </children>
+</Pane>

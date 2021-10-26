@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projeto.banco.CadastroClienteController">
+   <children>
+      <Label layoutX="40.0" layoutY="32.0" text="Nome*" />
+      <Label layoutX="40.0" layoutY="70.0" text="CPF*" />
+      <TextField fx:id="txtNome" layoutX="107.0" layoutY="28.0" prefHeight="25.0" prefWidth="455.0" />
+      <TextField fx:id="txtCPF" layoutX="107.0" layoutY="66.0" prefHeight="25.0" prefWidth="455.0" />
+      <Button layoutX="39.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnSalvarAction" prefHeight="25.0" prefWidth="59.0" text="Salvar" />
+      <ListView fx:id="listaClientes" layoutX="41.0" layoutY="157.0" prefHeight="250.0" prefWidth="522.0" />
+      <Separator layoutX="39.0" layoutY="105.0" prefHeight="0.0" prefWidth="522.0" />
+      <Label fx:id="labelMensagem" layoutX="107.0" layoutY="120.0" prefHeight="17.0" prefWidth="455.0" />
+   </children>
+</Pane>

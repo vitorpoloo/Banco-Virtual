@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projeto.banco.GerenteController">
+   <children>
+      <Label layoutX="197.0" layoutY="42.0" text="Módulo do Gerente">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Cadastro">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#btnAbrirCadastroClienteAction" text="Cadastrar Cliente" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnAbrirCadastroGerenteAction" text="Cadastrar Gerente" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Abrir Contas">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnAbrirContaSimplesAction" text="Conta Simples" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnAbrirContaEspecialAction" text="Conta Especial" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnAbrirContaPoupancaAction" text="Conta Poupança" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Operações">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnAbrirAplicacaoAction" text="Aplicação" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnAbrirTransferenciaAction" text="Transferência" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnAbrirRetiradaAction" text="Retirada" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Outras Ações">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnAbrirMudarSenhaAction" text="Mudar Senha" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="27.0" layoutY="96.0" text="Pesquisar Conta">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNomeCliente" layoutX="27.0" layoutY="119.0" prefHeight="37.0" prefWidth="409.0" />
+      <Button layoutX="442.0" layoutY="119.0" mnemonicParsing="false" onAction="#btnPesquisarContaPorCliente" prefHeight="37.0" prefWidth="131.0" text="Pesquisar" />
+      <Separator layoutX="23.0" layoutY="75.0" prefHeight="7.0" prefWidth="559.0" />
+      <ListView fx:id="listaContas" layoutX="27.0" layoutY="166.0" prefHeight="200.0" prefWidth="546.0" />
+   </children>
+</Pane>

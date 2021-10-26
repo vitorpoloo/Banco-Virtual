@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projeto.banco.PrincipalController">
+   <children>
+      <Button layoutX="136.0" layoutY="183.0" mnemonicParsing="false" onAction="#btnAbrirTelaGerente" prefHeight="63.0" prefWidth="153.0" text="GERENTE" />
+      <Button layoutX="307.0" layoutY="183.0" mnemonicParsing="false" onAction="#btnAbrirTelaCliente" prefHeight="63.0" prefWidth="153.0" text="CLIENTE" />
+      <Label layoutX="158.0" layoutY="54.0" prefHeight="71.0" prefWidth="284.0" text="NOVO BANCO NACIONAL">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="147.0" text="Qual o seu perfil?" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
